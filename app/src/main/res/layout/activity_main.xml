@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linNotific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relNotific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/indentation_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvNotific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8sp"
+            android:text="Show push notifications"
+            style="@style/text_black"/>
+        <ImageView
+            android:id="@+id/ivNotific"
+            android:layout_width="@dimen/view_params_26"
+            android:layout_height="@dimen/view_params_16"
+            android:background="#e8e8e8"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+        <include layout="@layout/divider"
+            android:id="@+id/divider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linNotific"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/indentation_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvLang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                style="@style/text_black"/>
+            <TextView
+                android:id="@+id/tvLang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLang1"
+                android:text="Eanglish"
+                style="@style/text_gray" />
+        </RelativeLayout>
+        <include layout="@layout/divider"
+            android:id="@+id/divider" />
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linLang"
+    android:layout_marginTop="@dimen/indentation_32"
+    android:layout_marginStart="@dimen/indentation_16"
+    style="@style/text_blue"
+    android:text="DELETE PROFILE"/>
+
+</android.support.constraint.ConstraintLayout>

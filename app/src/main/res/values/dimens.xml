@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_params_1">1dp</dimen>
+    <dimen name="view_params_16">16dp</dimen>
+    <dimen name="view_params_26">26dp</dimen>
+
+    <dimen name="indentation_16">16dp</dimen>
+    <dimen name="indentation_20">20dp</dimen>
+    <dimen name="indentation_32">32dp</dimen>
+</resources>
